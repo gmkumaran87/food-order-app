@@ -68,7 +68,7 @@ const cart = [{
         name: "american classic",
         category: "lunch",
         price: 12.99,
-        img: "",
+        img: "https://res.cloudinary.com/gmkumaran87/image/upload/v1622723883/item-8_eu14nf.jpg",
         description: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `,
         isSelected: false,
     },
