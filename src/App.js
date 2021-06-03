@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Navigation from "./components/Navigation";
+import Menu from "./components/Menu";
+import { useGlobalContext } from "./Context";
 
 function App() {
+  const { isLoading } = useGlobalContext();
+  const loading = `<div className="loading"> <h2>Please wait while loading</h2></div>`;
+
+  console.log(`isLoading`, isLoading);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+      {isLoading && (
+        <div className="loading">
+          <h2>Please wait while loading...</h2>
+        </div>
+      )}
+      {!isLoading && <Menu />}
     </div>
   );
 }
