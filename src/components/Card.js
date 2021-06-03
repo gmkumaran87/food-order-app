@@ -1,5 +1,7 @@
 import React from "react";
 import "./Card.css";
+import Button from "./Button";
+import Cart from "./Cart";
 
 function Card(props) {
   const { img, description, name, isSelected, price } = props.cart;
@@ -14,16 +16,11 @@ function Card(props) {
         </div>
 
         <p>{description}</p>
-        <div className="add-cart">
-          <div className="decrease">
-            <img src="./images/minus.png" alt="" />
-          </div>
-          <span className="cart-qty">1</span>
-          <div className="increase">
-            {" "}
-            <img src="./images/add.png" alt="" />
-          </div>
-        </div>
+        {isSelected ? (
+          <Cart />
+        ) : (
+          <Button value={"cart-btn"}>Add to Cart</Button>
+        )}
       </div>
     </article>
   );
