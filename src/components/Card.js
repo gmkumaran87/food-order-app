@@ -1,11 +1,12 @@
 import React from "react";
 import "./Card.css";
 import Button from "./Button";
-import Cart from "./Cart";
+import CartButton from "./CartButton";
 
 function Card(props) {
-  const { img, description, name, isSelected, price } = props.cart;
-  console.log(`img`, img);
+  const { img, description, name, isSelected, price, id, quantity, amount } =
+    props.cart;
+
   return (
     <article className="card">
       <img src={img} alt={name} className="menu-img" />
@@ -17,9 +18,11 @@ function Card(props) {
 
         <p>{description}</p>
         {isSelected ? (
-          <Cart />
+          <CartButton id={id} qty={quantity} amt={amount} />
         ) : (
-          <Button value={"cart-btn"}>Add to Cart</Button>
+          <Button className={"cart-btn"} data={"cart"} id={id}>
+            Add to Cart
+          </Button>
         )}
       </div>
     </article>

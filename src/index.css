@@ -9,6 +9,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', 'sans-serif', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     background: linear-gradient(#f9dfdc, #fff);
+    /* background: #f9dffe;*/
     height: 100vh;
     width: 100vw;
 }
@@ -24,11 +25,12 @@ body {
     --clr-red-dark: hsl(360, 67%, 44%);
     --clr-red-light: hsl(360, 71%, 66%);
     --transition: all 0.3s linear;
-    --spacing: 0.25rem;
+    --spacing: 2px;
     --radius: 0.25rem;
     --large-screen-width: 1170px;
     --small-screen-width: 90vw;
     --fixed-width: 50rem;
+    --clr-app-red: #f54748;
 }
 
 * {

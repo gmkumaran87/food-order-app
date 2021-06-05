@@ -23,3 +23,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem 2rem;
 }
+
+.btn-container {
+    padding: 10px;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    justify-content: center;
+}
