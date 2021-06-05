@@ -29,9 +29,14 @@
     background: transparent;
     border: 1px solid var(--clr-app-red);
     color: var(--clr-app-red);
-    padding: 5px;
+    padding: 10px;
     letter-spacing: var(--spacing);
     font-weight: bold;
+}
+
+.router-btn:hover {
+    background: var(--clr-red-light);
+    color: #fff;
 }
 
 .router-menu {

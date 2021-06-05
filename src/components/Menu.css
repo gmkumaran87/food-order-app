@@ -18,10 +18,12 @@
     margin: 0 auto;
 }
 
-.menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem 2rem;
+@media screen and (min-width: 802px) {
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 2rem;
+    }
 }
 
 .btn-container {

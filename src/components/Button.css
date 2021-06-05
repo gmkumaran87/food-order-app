@@ -4,18 +4,20 @@
     max-width: 120px;
 }
 
-.btn {
-    border-radius: var(--radius);
-    background-color: #f54748;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    letter-spacing: var(--spacing);
-    display: inline-block;
-    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, .52);
-    font-family: inherit;
-    text-transform: capitalize;
-    transition: var(--transition);
+@media screen and (min-width: 802px) {
+    .btn {
+        border-radius: var(--radius);
+        background-color: #f54748;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        letter-spacing: var(--spacing);
+        display: inline-block;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, .52);
+        font-family: inherit;
+        text-transform: capitalize;
+        transition: var(--transition);
+    }
 }
 
 .btn:hover {

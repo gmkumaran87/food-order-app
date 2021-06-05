@@ -9,9 +9,11 @@ body {
     margin: 0;
     font-family: 'Montserrat', 'sans-serif', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     background: linear-gradient(#f9dfdc, #fff);
-    /* background: #f9dffe;*/
+    /*background: linear-gradient(linear, left top, left bottom, from(#f9dfdc), to(#fff)) fixed;*/
+    background: no-repeat;
     height: 100vh;
     width: 100vw;
+    background: #f9dfdc;
 }
 
 :root {

@@ -2,7 +2,7 @@ import React from "react";
 import CartButton from "../components/CartButton";
 
 const CartItems = (props) => {
-  const { name, category, price } = props.cart;
+  const { name, category, price, id, quantity } = props.cart;
 
   console.log(name, category, price);
   return (
@@ -12,7 +12,7 @@ const CartItems = (props) => {
         <h4>{category}</h4>
         <span>{price}</span>
       </div>
-      <CartButton />
+      <CartButton id={id} qty={quantity} price={price} priceValue={false} />
     </article>
   );
 };

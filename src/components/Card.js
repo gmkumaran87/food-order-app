@@ -12,19 +12,17 @@ function Card(props) {
       <img src={img} alt={name} className="menu-img" />
       <div className="menu-desc">
         <div className="menu-title">
-          <h4>{name}</h4>
-          <span className="ruppee">{price}</span>
+          <h4> {name} </h4> <span className="ruppee"> {price} </span>{" "}
         </div>
-
-        <p>{description}</p>
+        <p> {description} </p>{" "}
         {isSelected ? (
-          <CartButton id={id} qty={quantity} amt={amount} />
+          <CartButton id={id} qty={quantity} amt={amount} priceValue={true} />
         ) : (
           <Button className={"cart-btn"} data={"cart"} id={id}>
-            Add to Cart
+            Add to Cart{" "}
           </Button>
-        )}
-      </div>
+        )}{" "}
+      </div>{" "}
     </article>
   );
 }

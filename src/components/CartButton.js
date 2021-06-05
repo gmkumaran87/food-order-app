@@ -2,7 +2,7 @@ import React from "react";
 import { useGlobalContext } from "../Context";
 
 function CartButton(props) {
-  const { id, qty, amt } = props;
+  const { id, qty, amt, priceValue } = props;
   const { modifyItem } = useGlobalContext();
 
   return (
@@ -14,17 +14,17 @@ function CartButton(props) {
             alt="minus"
             className="addDec-img"
           />
-        </div>{" "}
-        <span className="cart-qty"> {qty} </span>{" "}
+        </div>
+        <span className="cart-qty"> {qty} </span>
         <div className="increase" onClick={(e) => modifyItem(e, id)}>
           <img
             src="https://res.cloudinary.com/gmkumaran87/image/upload/v1622724834/plus_o5ki2v.svg"
             alt="plus"
             className="addDec-img"
           />
-        </div>{" "}
-      </div>{" "}
-      <span className="price"> {amt} </span>{" "}
+        </div>
+      </div>
+      {priceValue && <span className="price"> {amt} </span>}
     </div>
   );
 }

@@ -10,11 +10,13 @@ const reducer = (state, action) => {
     };
 
     const totalAmt = (items) => {
-        if (items.length > 0) {
-            return items.map((item) => item.amount).reduce((a, b) => a + b);
-        } else {
-            return 0;
-        }
+        if (items.length > 0)
+            return items
+                .map((item) => item.amount)
+                .reduce((a, b) => a + b)
+                .toFixed(2);
+
+        return 0;
     };
 
     console.log(`state.selectedItems`, state.cartItems);

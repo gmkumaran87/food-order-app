@@ -1,19 +1,20 @@
-.card {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 2rem;
-    justify-content: center;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    height: 180px;
-}
-
-.menu-img {
-    width: 100%;
-    height: 180px;
-    border: .25rem solid #f54748;
-    border-radius: var(--radius);
-    object-fit: cover;
-    display: block;
+@media screen and (min-width: 802px) {
+    .card {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 2rem;
+        justify-content: center;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        height: 180px;
+    }
+    .menu-img {
+        width: 100%;
+        height: 180px;
+        border: .25rem solid #f54748;
+        border-radius: var(--radius);
+        object-fit: cover;
+        display: block;
+    }
 }
 
 .menu-desc {
