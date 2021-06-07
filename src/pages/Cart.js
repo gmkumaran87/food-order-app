@@ -3,6 +3,7 @@ import "./Cart.css";
 import { useGlobalContext } from "../Context";
 import CartItems from "./CartItems";
 import Button from "./../components/Button";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { selectedItems, totalAmount } = useGlobalContext();
@@ -26,9 +27,17 @@ const Cart = () => {
             <h4>Total</h4>
             <span>{totalAmount}</span>
           </div>
-          <Button className="router-btn" data="router">
-            Back to Menu
-          </Button>
+
+          <div className="cart-btn-container">
+            <Link to="/food-order-app/">
+              <Button className="router-btn" data="router">
+                Back to Menu
+              </Button>
+            </Link>
+            <Button className="router-btn order-btn" data="router">
+              Order now
+            </Button>
+          </div>
         </footer>
       </div>
     </>

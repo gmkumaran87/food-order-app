@@ -43,7 +43,12 @@
     align-items: center;
 }
 
-.cartItems {}
+.cart-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    margin-top: 30px;
+}
 
 .item {
     display: flex;

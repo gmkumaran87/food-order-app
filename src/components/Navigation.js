@@ -8,7 +8,7 @@ function Navigation() {
   const { totalItems } = useGlobalContext();
   return (
     <nav className="nav-bar">
-      <Link to="/">
+      <Link to="/food-order-app/">
         <h2>Food App</h2>
       </Link>
 
@@ -17,7 +17,7 @@ function Navigation() {
           <a href="/">Services</a>
         </li>
         <li>
-          <a href="/">Menu</a>
+          <a href="/food-order-app/">Menu</a>
         </li>
         <li>
           <a href="/">Contact Us</a>

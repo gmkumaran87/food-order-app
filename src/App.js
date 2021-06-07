@@ -13,18 +13,19 @@ function App() {
     <Router>
       <Navigation />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/food-order-app">
+          {" "}
           {isLoading && (
             <div className="loading">
-              <h2>Please wait while loading...</h2>
+              <h2> Please wait while loading... </h2>{" "}
             </div>
-          )}
-          {!isLoading && <Menu />}
-        </Route>
+          )}{" "}
+          {!isLoading && <Menu />}{" "}
+        </Route>{" "}
         <Route exact path="/cart">
           <Cart />
-        </Route>
-      </Switch>
+        </Route>{" "}
+      </Switch>{" "}
     </Router>
   );
 }
