@@ -25,7 +25,7 @@ const Cart = () => {
         <footer className="cart-footer">
           <div className="cart-total">
             <h4>Total</h4>
-            <span>{totalAmount}</span>
+            <span className="ruppee">{totalAmount}</span>
           </div>
 
           <div className="cart-btn-container">
